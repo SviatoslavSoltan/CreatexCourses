@@ -461,8 +461,58 @@
         <div class="testimonials_container container">
             <h3>Testimonials</h3>
             <h2>What our students say</h2>
+        
+            <div class="testimonials_slider">
+                <div class="testimonials_slider-item">
+                    <div class="testimonials_slider-text">
+                        <img src="./img/braces.svg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis
+                            fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae id turpis tempus ornare turpis quis non.
+                            Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                        </p>
+                    </div>
+                    <div class="testimonials_slider-author">
+                        <img src="./img/Eleanor.png" alt="Eleanor Pena">
+                        <div class="testimonials_slider-info">
+                            <p class="testimonials_slider-name">Eleanor Pena</p>
+                            <p class="testimonials_slider-city">Position, Course</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials_slider-item">
+                    <div class="testimonials_slider-text">
+                        <img src="./img/braces.svg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis
+                            fermentum amet, eu. Pulvinar eu sed purus facilisiaecenas diam integer in.
+                        </p>
+                    </div>
+                    <div class="testimonials_slider-author">
+                        <img src="./img/Eleanor.png" alt="Eleanor Pena">
+                        <div class="testimonials_slider-info">
+                            <p class="testimonials_slider-name">Eleanor Pena</p>
+                            <p class="testimonials_slider-city">Position, Course</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials_slider-item">
+                    <div class="testimonials_slider-text">
+                        <img src="./img/braces.svg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam viverra mus lobortis
+                            fermentum amet, eu. Pulvinar eu sed cilisi. Vitae id turpiscilisi. Vitae id turpiscilisi. Vitae id turpiscilisi. Vitae id turpispurus facilisi. Vitae id turpis tempus ornare turpis quis non.
+                            Congue tortor in euismod vulputate etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                        </p>
+                    </div>
+                    <div class="testimonials_slider-author">
+                        <img src="./img/Eleanor.png" alt="Eleanor Pena">
+                        <div class="testimonials_slider-info">
+                            <p class="testimonials_slider-name">Eleanor Pena</p>
+                            <p class="testimonials_slider-city">Position, Course</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
-        <div class="fade"></div>
 
         
 
@@ -506,20 +556,18 @@
                   slidesToScroll: 1
                 }
               }
-              // You can unslick at a given breakpoint now by adding:
-              // settings: "unslick"
-              // instead of a settings object
             ]
           });
     </script>
 
 
 <script>
-    $('.fade').slick({
+    $('.testimonials_slider').slick({
   dots: true,
   infinite: true,
   speed: 500,
   fade: true,
+  adaptiveHeight: true,
   cssEase: 'linear'
 });
 </script>
