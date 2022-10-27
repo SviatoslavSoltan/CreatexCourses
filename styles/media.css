@@ -131,25 +131,359 @@
         max-width: 230px;
     }
 
+
+    .courses__cardinfo {
+        padding: 10px 0;
+    }
+
+
+    .nav-tabs {
+        margin-top: 40px;
+    }
 }
 
 
 @media (max-width: 1024px){
 
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 15px;
+    }
+
+    .intro__play svg{
+        width: 50px;
+        height: 50px;
+    }
+
+    .intro__title {
+        font-size: 40px;
+    }
 
 
 
+    .intro__statistics-counts {
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 130%;
+    }
+
+
+    .intro__statistics-text {
+        font-size: 12px;
+    }
+
+
+    .intro__btns-about {
+        font-size: 12px;
+        line-height: 30px;
+        letter-spacing: 0.5px;
+        padding: 0px 30px;
+    }
+
+    .intro__btns-explore {
+        font-size: 12px;
+        line-height: 30px;
+        letter-spacing: 0.5px;
+        padding: 0px 30px;
+    }
+
+    .about_image {
+        max-width: 40%;
+        height: 40%;
+    }
+
+    .about__container {
+        margin: 0px auto;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .about__content h2 {
+        font-size: 30px;
+    }
+
+    .about__content h3 {
+        font-size: 15px;
+    }
+
+
+    .about__item {
+        font-size: 10px;
+    }
+
+    .about_btn {
+        font-size: 12px;
+        line-height: 30px;
+        letter-spacing: 0.5px;
+        padding: 0px 30px;
+    }
+
+    .courses__top button {
+        font-size: 12px;
+        line-height: 30px;
+        letter-spacing: 0.5px;
+        padding: 0px 30px;
+    }
+
+    .courses__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 0 30px;
+    }
+
+    .courses__cardname {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+
+    .courses__container {
+        padding-bottom: 10px;
+    }
+
+    .benefits {
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+
+    .nav-tabs .nav-link {
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+
+    .benefits__content-img {
+        margin-top: 0px;
+    }
+
+
+    .benefits__content-title {
+        font-size: 20px;
+    }
+
+    .benefits__content-text {
+        font-size: 10px;
+    }
+
+    .tab-content>.active {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .benefits__content {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .events {
+        padding: 30px 0;
+    }
+
+    .events__item {
+        padding: 13px 38px;
+    }
+
+    .events__container h2 {
+        margin-bottom: 30px;
+    }
+
+    .events__day {
+        font-weight: 900;
+        font-size: 30px;
+    }
+
+    .events__months {
+        font-size: 15px;
+    }
+
+    .events__time {
+        font-weight: 400;
+        font-size: 10px;
+    }
+
+    .events_content-title {
+        font-size: 12px;
+    }
+
+    .events_content-text {
+        font-size: 16px;
+    }
+
+    .events__item button {
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: 0.5px;
+        height: 30px;
+    }
+
+    .events__more {
+        font-size: 20px;
+        margin-top: 12px;
+    }
+
+    .view_more {
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: 0.5px;
+        height: 30px;
+    }
+
+    .certificate {
+        padding: 50px 50px;
+    }
+
+    .team_and_testimonials {
+        padding-top: 37px;
+        padding-bottom: 50px;
+    }
+
+    .slick-prev {
+        left: 80%;
+    }
+
+    .testimonials_container {
+        margin-top: 61px;
+    }
+
+    .testimonials_container h2 {
+        margin-bottom: 25px;
+    }
 
 
 
+    .testimonials_slider-item {
+        padding: 30px;
+    }
 
 
+    .testimonials_slider-text {
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+        width: 90%;
+    }
+
+    .testimonials_slider-author {
+        margin-top: 20px;
+    }
+
+    .blog__title button {
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: 0.5px;
+        height: 30px;
+    }
 
 
+    .blog__item-info-name {
+        font-size: 10px;
+    }
+
+    .blog__item-time {
+        font-size: 10px;
+    }
+
+    .blog__item-text>:nth-child(1) {
+        font-size: 15px;
+    }
+
+    .blog__item-text>:nth-child(2) {
+        font-size: 12px;
+    }
+
+    .blog_container {
+        padding: 25px 0;
+    }
 
 
+    .subscribe_container {
+        padding: 30px 0 30px;
+    }
+
+
+    .subscribe input {
+        width: 250px;
+        height: 30px;
+    }
+
+    .subscribe button {
+        font-size: 12px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+        height: 30px;
+        padding: 0 30px
+    }
+
+    .footer__content {
+        max-width: 190px;
+    }
+
+    footer p {
+        font-weight: 400;
+        font-size: 9px;
+        margin: 10px 0;
+    }
+
+    .footer_icons a {
+        box-sizing: border-box;
+        margin-right: 9px;
+    }
+
+    .footer__icon  {
+        transform: scale(0.8);
+    }
+
+
+    .footer__list {
+        font-size: 12px;
+    }
+
+    .footer__list a {
+        font-size: 10px;
+    }
+
+    .sign_up p {
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    .sign_up p {
+        font-size: 8px;
+    }
 
     
+
+    .sign_up_form {
+        height: 25px;
+    }
+
+    .sign_up_form input {
+        height: 25px;
+        font-size: 12px;
+    }
+
+
+    .footer__bottom .container p {
+        font-weight: 400;
+        font-size: 7px;
+    }
+
+
+    .footer__bottom .container {
+        padding: 10px 0
+    }
+
+
+
+
+
+
+
+
+
 }
 
 
