@@ -1,0 +1,157 @@
+@media (max-width: 1230px){
+    section {
+        padding: 0px 50px;
+    }
+
+    .header__btns button {
+        padding: 0px 18px;
+    }
+
+    .intro__container {
+        padding-top: 120px;
+    }
+
+    .intro__statistics {
+        
+        margin-top: 50px;
+    }
+
+    .intro__image{
+        max-width: 50%;
+    }
+
+    .about_image{
+        max-width: 50%;
+        max-height: 60%;
+    }
+
+    .certificate__example {
+        max-width: 80%;
+        max-height: 90%;
+    }
+
+    section.about{
+        padding-top: 80px;
+    }
+
+
+    .about__container{
+        margin-bottom: 80px;
+    }
+
+    .courses__card{
+        max-width: 45%;
+    }
+
+    .courses__card img{
+        max-width: 45%;
+    }
+
+    .courses__container {
+        padding-bottom: 50px;
+    }
+
+    .nav-tabs .nav-link {
+        padding: 10px 30px;
+    }
+
+
+    .benefits__content-img {
+        margin-top: 40px;
+        max-width: 50%;
+        margin-left: 20px;
+    }
+
+    .events__date{
+        margin: 0 10px;
+    }
+
+    .events__item button {
+        margin-left: 10px;
+        padding: 0 20px;
+    }
+
+    .certificate {
+        padding: 80px 50px;
+    }
+
+    .team_and_testimonials {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    
+    .team__slider {
+        max-width: 90%;
+        margin: 60px auto;
+     }
+
+     .slick-slide img {
+        max-width: 98%;
+     }
+
+    .slick-prev {
+        left: 85%;
+    }
+
+    .testimonials_container {
+        margin-top: 80px;
+    }
+
+    .blog_container {
+        padding: 60px 0 60px;
+    }
+
+
+
+    .blog__item-info>:nth-child(1n+1) {
+        margin-right: 5px;
+    }
+
+
+    .subscribe_container {
+        padding: 60px 0 60px;
+        text-align: center;
+    }
+
+
+    .footer__container {
+        padding: 50px 30px;
+    }
+
+    .footer__bottom {
+        padding: 0 30px;
+    }
+
+
+    .footer__list {
+        margin: 0 10px;
+    }
+
+    .sign_up {
+        max-width: 230px;
+    }
+
+}
+
+
+@media (max-width: 1024px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+

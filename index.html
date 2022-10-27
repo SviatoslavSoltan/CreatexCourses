@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DAT Аграрний інтернет магазин">
-    <meta name="keywords" content="dat, насіння, сзр, добрива, мінеральні добрива">
+    <meta name="description" content="Enjoy studying with Createx Online Courses">
+    <meta name="keywords" content="Createx Online Courses">
     
-    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon.svg">
-    <link rel="icon" type="image/svg" sizes="32x32" href="./img/favicon.svg">
-    <link rel="icon" type="image/svg" sizes="16x16" href="./img/favicon.svg">
-    <link rel="mask-icon" href="./img/favicon.svg" color="#fff">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/icons/favicon.svg">
+    <link rel="icon" type="image/svg" sizes="32x32" href="./img/icons/favicon.svg">
+    <link rel="icon" type="image/svg" sizes="16x16" href="./img/icons/favicon.svg">
+    <link rel="mask-icon" href="./img/icons/favicon.svg">
 
     <meta name="og:url" content="#" /> <!--Domain site url-->
-    <meta name="og:title" content="DAT Аграрний інтернет магазин" />
-    <meta name="og:description" content="Основна сфера діяльності – дистрибуція насіння, засобів захисту рослин, мінеральних макро - та мікродобрив" />
+    <meta name="og:title" content="Createx Online Courses" />
+    <meta name="og:description" content="Enjoy studying with Createx Online Courses" />
     <meta name="og:image" content="./img/og_image.img"/>
     <meta name="og:type" content="website"/>
     <meta property="og:image:width" content="350" />
@@ -33,6 +33,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/media.css">
 
     <title>Createx Online Courses</title>
 </head>
@@ -74,7 +75,7 @@
                     <button class="intro__btns-explore">Explore courses</button>
                 </div>
             </div>
-            <img src="./img/intro_img.svg" alt="illustration">
+            <img class="intro__image" src="./img/intro_img.svg" alt="illustration">
         </div>
         <div class="intro__statistics container">
             <span class="intro__statistics-counts">1200</span>
@@ -98,7 +99,7 @@
     </section>
     <section class="about">
         <div class="about__container container">
-            <img src="./img/about_img.jpg" alt="illustration">
+            <img class="about_image" src="./img/about_img.png" alt="illustration">
             <div class="about__content">
                 <h3>Who we are</h3>
                 <ul class="about_list">
@@ -715,29 +716,38 @@
             slidesToShow: 4,
             slidesToScroll: 2,
             responsive: [
-              {
-                breakpoint: 1024,
+                {
+                breakpoint: 1240,
                 settings: {
                   slidesToShow: 3,
-                  slidesToScroll: 3,
+                  slidesToScroll: 1,
                   infinite: true,
                   dots: false
                 }
-              },
-              {
-                breakpoint: 600,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                    }
                 }
-              },
-              {
-                breakpoint: 480,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1
-                }
-              }
             ]
           });
     </script>

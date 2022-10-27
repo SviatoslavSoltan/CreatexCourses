@@ -18,7 +18,6 @@ h2{
     font-size: 46px;
     line-height: 130%;
     color: #1E212C;
-
 }
 
 
@@ -259,9 +258,13 @@ header{
     margin-left: 5px;
 }
 
+section.about{
+    padding-top: 180px;
+}
 
 .about__container{
-    margin: 180px auto;
+    margin: 0px auto;
+    margin-bottom: 180px;
     display: flex;
     justify-content: space-between;
 }
@@ -589,7 +592,7 @@ header{
     color: #F75E05;
     box-sizing: border-box;
     background-color: #fff;
-    padding: 0 32px;
+    padding: 0 30px;
     border-radius: 4px;
     border: 1px solid #F75E05;
     font-weight: 700;
@@ -1263,7 +1266,7 @@ max-width: 286px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     height: 36px;
-    max-width: 286px;
+    max-width:100%;
 }
 
 .sign_up_form input{
