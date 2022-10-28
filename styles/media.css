@@ -895,6 +895,15 @@
         margin-left: 6px;
     }
 
+    .footer__container {
+        padding: 20px 30px;
+    }
+
+    .footer__container {
+
+        justify-content: space-around;
+    }
+
     }
 
 
