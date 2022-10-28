@@ -891,6 +891,10 @@
         margin-top: 10px;
     }
 
+    .testimonials_slider-info {
+        margin-left: 6px;
+    }
+
     }
 
 
@@ -942,16 +946,6 @@
     .benefits__container{
         padding: 0;
     }
-
-
-
-
-
-
-
-
-
-
 
 
     .intro__container {
@@ -1017,7 +1011,8 @@
     .testimonials_slider-author {
         width: 100%;
         margin-left: 0px;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
     
     .blog__item {
@@ -1041,7 +1036,9 @@
         position: absolute;
         right: 10%;
     }
-
+    .testimonials_slider-info {
+        margin-left: 6px;
+    }
 
 
 
