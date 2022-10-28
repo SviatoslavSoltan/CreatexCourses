@@ -46,6 +46,11 @@ header{
     justify-content: flex-start;
 }
 
+.headerNav_hidden{
+display: none;
+}
+
+
 .headerNav{
     width: 100%;
     max-width: 432px;
@@ -76,7 +81,6 @@ header{
     line-height: 160%;
     color: #424551;
     white-space: nowrap;
-
 }
 
 

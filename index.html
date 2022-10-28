@@ -44,17 +44,47 @@
                 <a href="./index.html"><img src="./img/logo.svg" alt="Logo"></a>
                     <nav class="headerNav">
                         <ul class="headerNav__list">
-                            <li class="headerNav__item"><a href="/">About Us</a></li>
-                            <li class="headerNav__item"><a href="/">Courses</a></li>
-                            <li class="headerNav__item"><a href="/">Events</a></li>
-                            <li class="headerNav__item"><a href="/">Blog</a></li>
-                            <li class="headerNav__item"><a href="/">Contacts</a></li>
+                            <li class="headerNav__item"><a href="#">About Us</a></li>
+                            <li class="headerNav__item"><a href="#">Courses</a></li>
+                            <li class="headerNav__item"><a href="#">Events</a></li>
+                            <li class="headerNav__item"><a href="#">Blog</a></li>
+                            <li class="headerNav__item"><a href="#">Contacts</a></li>
                         </ul>
                     </nav>
+                    <div class="headerNav_hidden">
+                        <button onclick="myFunction()" class="header_dropbtn">Menu</button>
+                        <ul class="headerNav__list_drop" id="myDropdown">
+                            <li class="headerNav__item_drop"><a href="#">About Us</a></li>
+                            <li class="headerNav__item_drop"><a href="#">Courses</a></li>
+                            <li class="headerNav__item_drop"><a href="#">Events</a></li>
+                            <li class="headerNav__item_drop"><a href="#">Blog</a></li>
+                            <li class="headerNav__item_drop"><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <script>
+                        function myFunction() {
+                            document.getElementById("myDropdown").classList.toggle("show_drop");
+                        }
+
+                        // Close the dropdown menu if the user clicks outside of it
+                        window.onclick = function(event) {
+                        if (!event.target.matches('.header_dropbtn')) {
+
+                            var dropdowns = document.getElementsByClassName("headerNav__list_drop");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show_drop')) {
+                                openDropdown.classList.remove('show_drop');
+                            }
+                            }
+                        }
+                        }
+                    </script>
             </div>
             <div class="header__btns">
                 <button>Get consultation</button>
-                <a href="/"><img src="./img/header_vector.svg" alt="">Log in / Register</a>
+                <a href="#"><img src="./img/header_vector.svg" alt="">Log in / Register</a>
             </div>
         </div>
     </header>
@@ -536,8 +566,8 @@
                         <img class="blog__item-icon" src="./img/calender.svg" alt="">
                         <time class="blog__item-time" datetime="2020-09-4"> September 4, 2020</time>
                         <span>|</span>
-                        <img class="blog__item-icon" src="./img/clock.svg" alt=""> 
-                        <time class="blog__item-time" datetime="">36 min</time>
+                        <img class="blog__item-icon media_hidden" src="./img/clock.svg" alt=""> 
+                        <time class="blog__item-time media_hidden" datetime="">36 min</time>
                     </div>
                     <div class="blog__item-text">
                         <p>What is traffic arbitrage and does it really make money?</p>
@@ -557,8 +587,8 @@
                         <img class="blog__item-icon" src="./img/calender.svg" alt="">
                         <time class="blog__item-time" datetime="2020-08-25"> August 25, 2020</time>
                         <span>|</span>
-                        <img class="blog__item-icon" src="./img/clock.svg" alt=""> 
-                        <time class="blog__item-time" datetime="">45 min</time>
+                        <img class="blog__item-icon media_hidden" src="./img/clock.svg" alt=""> 
+                        <time class="blog__item-time media_hidden" datetime="">45 min</time>
                     </div>
                     <div class="blog__item-text">
                         <p>What to do and who to talk to if you want to get feedback on the product</p>
@@ -667,7 +697,7 @@
                         (405) 555-0128
                     </a>
                 </li>
-                <li><a href="mailto:">
+                <li><a href="mailto:12312@123132.com">
                         <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1668 9.99935V2.66602C15.1668 1.56145 14.2714 0.666016 13.1668 0.666016L2.83349 0.666026C1.72893 0.666027 0.833496 1.56146 0.833496 2.66603V9.99934C0.833496 11.1039 1.72893 11.9993 2.8335 11.9993L13.1668 11.9993C14.2714 11.9993 15.1668 11.1039 15.1668 9.99935ZM13.8335 4.17232V9.99935C13.8335 10.3675 13.535 10.666 13.1668 10.666L2.8335 10.666C2.46531 10.666 2.16683 10.3675 2.16683 9.99934L2.16683 4.17223L6.87561 7.3742C7.55433 7.83573 8.44613 7.83573 9.12485 7.3742L13.8335 4.17232ZM13.8259 2.56509C13.7773 2.24479 13.5007 1.99935 13.1668 1.99935L2.83349 1.99936C2.49965 1.99936 2.22311 2.24476 2.17443 2.56501L7.62535 6.27164C7.85159 6.42548 8.14886 6.42548 8.3751 6.27164L13.8259 2.56509Z" fill="white"/>
                         </svg>
@@ -738,12 +768,15 @@
                     breakpoint: 600,
                     settings: {
                     slidesToShow: 2,
+                    buttons: false,
+                    dots:true,
                     slidesToScroll: 1
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
+                    buttons: false,
                     slidesToShow: 1,
                     slidesToScroll: 1
                     }
@@ -760,7 +793,17 @@
   speed: 500,
   fade: true,
   adaptiveHeight: true,
-  cssEase: 'linear'
+  cssEase: 'linear',
+  responsive: [
+                {
+                breakpoint: 780,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  buttons: false,
+                }}
+            ]
 });
 </script>
 
